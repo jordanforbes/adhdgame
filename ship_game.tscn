@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://didysxj8e1y0t"]
+
+[ext_resource type="PackedScene" uid="uid://1x6dgbdp7bf" path="res://coin.tscn" id="1_0u5ba"]
+[ext_resource type="PackedScene" uid="uid://cbgp8sjjy7yhd" path="res://player.tscn" id="2_e33xp"]
+[ext_resource type="PackedScene" uid="uid://cmufy5sg8tdh0" path="res://hud.tscn" id="3_0j2cg"]
+
+[node name="Ship_game" type="Node2D"]
+
+[node name="Coin" parent="." instance=ExtResource("1_0u5ba")]
+
+[node name="Player" parent="." instance=ExtResource("2_e33xp")]
+position = Vector2(-296, 0)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Hud" parent="." instance=ExtResource("3_0j2cg")]
+offset_left = -557.0
+offset_top = -310.0
+offset_right = -557.0
+offset_bottom = -310.0
+
+[node name="Coin2" parent="." instance=ExtResource("1_0u5ba")]
+position = Vector2(73, -1)
+
+[node name="Coin3" parent="." instance=ExtResource("1_0u5ba")]
+position = Vector2(173, -85)

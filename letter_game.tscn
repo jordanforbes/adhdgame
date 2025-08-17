@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://bc2ylbuxmk0hn"]
+
+[ext_resource type="Texture2D" uid="uid://bja7j1evfdoca" path="res://assets/placeholder/Square-0007.png" id="1_tg8mu"]
+[ext_resource type="Texture2D" uid="uid://8cqtr6qhsn3g" path="res://assets/placeholder/Square-0001.png" id="2_f80ra"]
+[ext_resource type="Script" uid="uid://b432vd7v5dcmb" path="res://letter_bullet.gd" id="3_561u0"]
+
+[node name="Letter_Game" type="Node2D"]
+
+[node name="Score_box" type="Sprite2D" parent="."]
+position = Vector2(356, -249)
+scale = Vector2(12.5, 1.29688)
+texture = ExtResource("1_tg8mu")
+
+[node name="Letter_Bullet" type="Sprite2D" parent="."]
+position = Vector2(202, 361)
+texture = ExtResource("2_f80ra")
+script = ExtResource("3_561u0")
+
+[node name="Label" type="Label" parent="Letter_Bullet"]
+offset_left = -4.0
+offset_top = -19.0
+offset_right = 10.0
+offset_bottom = 16.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "J"

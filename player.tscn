@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cbgp8sjjy7yhd"]
+
+[ext_resource type="Texture2D" uid="uid://8aldr4alw7wu" path="res://assets/placeholder/Triangle-0005.png" id="1_4flbx"]
+[ext_resource type="Script" uid="uid://dkw32wvi3s7vd" path="res://player.gd" id="1_onrkg"]
+
+[node name="Player" type="CharacterBody2D"]
+rotation = 1.5708
+script = ExtResource("1_onrkg")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-4.76837e-07, 0)
+scale = Vector2(-2.02994, 2.06415)
+texture = ExtResource("1_4flbx")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(-32, 32)
+polygon = PackedVector2Array(32, -64, 64, 0, 0, 0)
